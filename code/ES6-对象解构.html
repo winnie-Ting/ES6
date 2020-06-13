@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>对象解构</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let person = {
+            name: 'xz',
+            age: 28,
+            sex: '男'
+        };
+        // let { name, age, sex } = person;
+        // console.log(name)
+        // console.log(age)
+        // console.log(sex)
+
+        let {
+            name: myName
+        } = person;
+        console.log(myName); //xz
+    </script>
+</body>
+
+</html>

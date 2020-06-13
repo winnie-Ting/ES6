@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array.from方法</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // var arrayLike = {
+        // 	"0": "肖战",
+        // 	"1": "肖赞",
+        // 	"2": "选择",
+        // 	"length": 3
+        // }
+
+        // var ary = Array.from(arrayLike);
+        // console.log(ary)
+
+        var arrayLike = {
+            "0": "1",
+            "1": "2",
+            "length": 2
+        }
+
+        var ary = Array.from(arrayLike, item => item * 2)
+        console.log(ary)
+    </script>
+</body>
+
+</html>
